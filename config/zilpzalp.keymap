@@ -19,14 +19,14 @@
     keymap {
         compatible = "zmk,keymap";
 
-        aptmak {
-            label = "APT";
+        colemak {
+            label = "COL";
 
             bindings = <
-                               &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp U          &kp Y
-                &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
-                               &kp C          &kp G          &kp D                                        &kp M          &comsem        &dotcol
-                                                             &my_lt NUM SQT &my_lt NAV SPACE &my_lt SYM E &my_lt FUN TAB
+                            &kp W           &kp F       &kp P           &kp K                   &kp J   &kp L          &kp U          &kp Y
+                &hl LGUI A  &hl LSHIFT R    &hl LALT S  &hl RCTRL T     &kp G                   &kp M   &hr RCTRL N    &hr LALT E     &hr RSHIFT I     &hr LGUI O
+                            &kp X           &kp C       &kp D                                           &kp H          &comsem        &dotcol
+                                                        &my_lt NUM ESC &my_lt NAV SPACE         &my_lt SYM ENTER &my_lt FUN BSPC
             >;
         };
         numbers {
