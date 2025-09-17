@@ -58,6 +58,7 @@ combo_##NAME { \
         COMBO(semi, &kp SEMI, 6 7)
         COMBO(dash, &kp MINUS, 21 22)
         COMBO(slash, &kp SLASH, 22 23)
+        COMBO(bslash, &kp BSLH, 23 17)
 /* usually on base layer
         COMBO(q, &kp Q, 1 2)
         COMBO(z, &kp Z, 18 19)
