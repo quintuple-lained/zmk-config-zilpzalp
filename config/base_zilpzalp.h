@@ -39,9 +39,26 @@ combo_##NAME { \
 };
 
 / {
+    // zilpzalp key numbers
+//     __________________________  __________________________
+//    /     0  |  1  |  2  |  3  \/   4 |   5 |   6 |   7    \
+// |  8  |  9  | 10  | 11  | 12  /\  13 |  14 |  15 |  16 | 17  |
+//    \    18  | 19  | 20    /        \    21 |  22 |  23   /
+//          \    24  | 25  /            \  26 |  27    /
+//           --------------              --------------
+
     combos {
         compatible = "zmk,combos";
-/* usually on base layer */
+        /* MY COMBOS */
+        COMBO(q, &kp Q, 0 1)
+        COMBO(b, &kp B, 1 2)
+        COMBO(z, &kp Z, 18 19)
+        COMBO(v, &kp V, 19 20)
+        COMBO(apo, &kp SQT, 5 6)
+        COMBO(semi, &kp SEMI, 6 7)
+        COMBO(dash, &kp MINUS, 21 22)
+        COMBO(slash, &kp SLASH, 22 23)
+/* usually on base layer
         COMBO(q, &kp Q, 1 2)
         COMBO(z, &kp Z, 18 19)
         COMBO(v, &kp V, 0 1)
@@ -55,7 +72,7 @@ combo_##NAME { \
 //        COMBO(enter, &kp ENTER, 21 22 23)
         COMBO(enter, &kp ENTER, 21 23)
         COMBO(esc, &kp ESC, 19 20)
-/* parentheticals */
+parentheticals
         COMBO(lbrc, &kp LBRC, 0 9)
         COMBO(lbkt, &kp LBKT, 1 10)
         COMBO(lpar, &kp LPAR, 2 11)
@@ -64,15 +81,14 @@ combo_##NAME { \
         COMBO(rpar, &kp RPAR, 5 14)
         COMBO(rbkt, &kp RBKT, 6 15)
         COMBO(rbrc, &kp RBRC, 7 16)
-/* caps */
+caps
         COMBO(caps, &caps_word, 11 14)
         COMBO(capslock, &kp CAPSLOCK, 0 7)
-/* deletion */
+deletion
         COMBO(bspc, &kp BSPC, 5 6)
         COMBO(del, &kp DEL, 6 7)
         COMBO(delword, &kp LC(BSPC), 5 7)
-/* alternative shifting */
-/*
+alternative shifting
         COMBO(Sq, &kp LS(Q), 1 2 25)
         COMBO(Sz, &kp LS(Z), 18 19 25)
         COMBO(Sv, &kp LS(V), 0 1 25)
