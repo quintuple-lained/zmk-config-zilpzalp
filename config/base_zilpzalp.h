@@ -50,15 +50,7 @@ combo_##NAME { \
     combos {
         compatible = "zmk,combos";
         /* MY COMBOS */
-        COMBO(q, &kp Q, 0 1)
-        COMBO(b, &kp B, 1 2)
-        COMBO(z, &kp Z, 18 19)
-        COMBO(v, &kp V, 19 20)
-        COMBO(apo, &kp SQT, 5 6)
-        COMBO(semi, &kp SEMI, 6 7)
-        COMBO(dash, &kp MINUS, 21 22)
-        COMBO(slash, &kp SLASH, 22 23)
-        COMBO(bslash, &kp BSLH, 23 17)
+
 /* usually on base layer
         COMBO(q, &kp Q, 1 2)
         COMBO(z, &kp Z, 18 19)
